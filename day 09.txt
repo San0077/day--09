@@ -1,0 +1,28 @@
+var res =data.filter(el=> el.region ==="Asia");
+ var fin = res.map(el=>el.name);
+ console.log(`total population of the asia continent is ${fin}`)}
+
+
+ var res =data.filter(el=> el.population < 200000);
+  var fin = res.map(el=>el.name)
+    console.log(`total population of the asia continent is ${fin}`)
+    }
+
+
+
+    var data = JSON.parse(req.response)
+    data.forEach(el=>console.log(`name ${el.name}, capital: ${el.capital}, flag : ${el.flag},`))
+
+     var fil = data.filter(el=> el.currencies[0].name === "Euro" )
+      var res = fil.map(el=> el.name) 
+   console.log(res)
+}
+
+     
+    var fil = data.filter(el=> el.region === "Asia");
+    
+    var add = fil.map(el=>el.population);
+   
+    var noo = add.reduce((a,b) => a + b)
+
+console.log(noo)
